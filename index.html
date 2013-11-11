@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>NetButler Demo</title>
+	</head>
+	<body>
+		<h1>Welcome to NetButler</h1>
+		<p>Hey, it's NetBulter, a webserver written entirely in Lua! Currently, it only relies on LuaSocket, which is nice. Let's take a look-see at some of the features currently implemented!</p>
+		<ul>
+			<li>Four MIME types: text/html, image/jpg, image/png, and image/gif!</li>
+			<li><a href="anotherpage.html">GET requests! (obviously)</a></li>
+			<li><a href="doesntexist.html">404 error handling!</a></li>
+			<li>Dynamic pages! Different number each time: ||random||</li>
+			<li>Images! <img src="test.png" alt="Wooh! It's an image!" /></li>
+		</ul>
+		<p>It's also got support for URL-encoded data in GET requests... but no POST support :( ... Yet!</p>
+		<fieldset>
+			<legend>Check it out!</legend>
+			<form action="formresponse" method="get">
+				First Name: <input type="text" id="firstname" name="firstname" /><br />
+				Last Name: <input type="text" id="lastname" name="lastname" /><br />
+				<input type="submit" value="Submit" />
+			</form>
+		</fieldset>
+	</body>
+</html>
